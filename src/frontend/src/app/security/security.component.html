@@ -1,0 +1,6 @@
+<div *ngIf="devices$ | async as devices">
+  <div *ngFor="let device of devices">
+    {{ device.name }}
+    <pre>{{device.latestData | json }}</pre>
+  </div>
+</div>
