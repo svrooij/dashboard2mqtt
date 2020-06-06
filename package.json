@@ -1,0 +1,33 @@
+{
+  "name": "dashboard2mqtt",
+  "version": "0.1.0",
+  "description": "A dashboard to control all your mqtt devices",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run start-server\" \"npm run start-ui\"",
+    "start-ui": "npm --prefix ./src/frontend run start",
+    "start-server": "npm --prefix ./src/backend run watch",
+    "install-both": "npm --prefix ./src/frontend install && npm --prefix ./src/backend install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svrooij/dashboard2mqtt.git"
+  },
+  "keywords": [
+    "home",
+    "automation",
+    "mqtt",
+    "dashboard",
+    "smarthome"
+  ],
+  "author": "Stephan van Rooij <github@svrooij.nl> (https://svrooij.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svrooij/dashboard2mqtt/issues"
+  },
+  "homepage": "https://github.com/svrooij/dashboard2mqtt#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
